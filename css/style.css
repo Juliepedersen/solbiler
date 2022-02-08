@@ -1,0 +1,175 @@
+
+
+*, :after, :before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+
+}
+ body{
+   background-color: rgb(102, 137, 202);
+ }
+.logo{
+  max-width: 40%;
+  padding-top: 2em;
+}
+
+img{
+  max-width: 20%;
+}
+
+
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 5px;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+}
+
+.hoved_sektion {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+
+
+
+
+.formular {
+  position: relative;
+  top: 80px;
+  width: 700px;
+  height: 245px;
+  background-color: rgb(70, 70, 219);
+  padding: 15px;
+  margin-left: 270px;
+  margin-bottom: 4em;
+  
+}
+
+.formular_overskrift {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "museo-sans",sans-serif;
+}
+
+.formular_felter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "museo-sans",sans-serif;
+}
+
+#afhentning, #aflevering, #personer {
+  width: 11rem;
+  text-align: right;
+  padding: 5px;
+}
+
+#kufferter {
+  width: 9.5rem;
+  padding: 5px;
+}
+
+.etiket {
+  margin: 15px 0 5px;
+  display: block;
+}
+
+.formular_knap {
+  text-align: center;
+  margin-top: 25px;
+ 
+}
+
+.knap {
+  cursor: pointer;
+  border: 1px solid rgb(46, 8, 105);
+  padding: 5px 40px;
+}
+
+.bil_sektion {
+  padding: 50px 0;
+  max-width: 1024px;
+
+  margin: 0 auto;
+
+}
+
+.bil {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid rgb(4, 47, 128);
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+.bilMM {
+  font-size: 1.5rem;
+  width: 13rem;
+}
+
+.bildetaljer {
+  width: 13rem;
+}
+
+.prisogbook {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 6rem;
+}
+
+.lejeudgift {
+  font-size: 1.5rem;
+}
+
+.booknu_knap {
+  background-color: rgb(10, 78, 141);
+  color: rgb(245, 219, 219);
+  text-decoration: none;
+  text-align: center;
+  width: 8rem;
+  padding: 0.5rem;
+  border: 1px solid rgb(70, 70, 219);
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: 900px) {
+  .formular {
+      margin: 0 auto;
+  }
+  .bil {
+      flex-direction: column;
+      justify-content: space-around;
+      height: 500px;
+      align-items: center;
+  }
+  .bilMM, .bildetaljer {
+      width: auto;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .billed_sektion {
+      height: 475px;
+  }
+  .formular {
+      width: 310px;
+      height: 375px;
+  }
+}
